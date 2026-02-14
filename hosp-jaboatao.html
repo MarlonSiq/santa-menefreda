@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hospital Jaboatão - Santa Menefreda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#BCD6F1" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <h1><a href="..">Santa Menefreda</a></h1>
+      <div class="topbar-links">
+        <a href="hosp-recife.html">Recife</a>
+        <a href="hosp-jaboatao.html" class="link-active">Jaboatão dos Guararapes</a>
+        <a href="sobre.html">Sobre</a>
+      </div>
+    </div>
+
+    <section class="hospital-rec-jab">
+      <h2>Hospital <span class="markdrop">Jaboatão</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper dui
+        justo, sit amet pellentesque diam tincidunt nec. Fusce ac tortor
+        interdum, fringilla ante vel, malesuada enim. Suspendisse nibh neque,
+        porta at mauris sed, lacinia sollicitudin lorem.
+      </p>
+    </section>
+    <main>
+      <div class="boxers">
+        <div id="box-consultas">
+          <div class="box-img" id="div-consultas"></div>
+          <p class="destaque">Consultas</p>
+          <p>Presenciais</p>
+        </div>
+        <div id="box-exames">
+          <div class="box-img" id="div-exames"></div>
+          <p class="destaque">Exames</p>
+          <p>laboratório ou imagem</p>
+        </div>
+        <div id="box-odontologia">
+          <div class="box-img" id="div-odontologia"></div>
+          <p class="destaque">odontologia</p>
+          <p>Marque sua consulta</p>
+        </div>
+        <div id="box-consulta">
+          <div class="box-img" id="div-consulta"></div>
+          <p class="destaque">Consulta</p>
+          <p>Online</p>
+        </div>
+        <div id="box-resultados">
+          <div class="box-img" id="div-resultados"></div>
+          <p class="destaque">Resultados</p>
+          <p>Resultados dos exames</p>
+        </div>
+        <div id="box-retornos">
+          <div class="box-img" id="div-retornos"></div>
+          <p class="destaque">Retornos</p>
+          <p>Consultar</p>
+        </div>
+      </div>
+
+      <section>
+        <h2>
+          Aproveite mais com a assinatura
+          <span class="markdrop">Menefreda+</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper
+          dui justo, sit amet pellentesque diam tincidunt nec. Fusce ac tortor
+          interdum, fringilla ante vel, malesuada enim. Suspendisse nibh neque,
+          porta at mauris sed, lacinia sollicitudin lorem.
+        </p>
+        <div class="botao"><p>Assinar agora</p></div>
+      </section>
+
+      <section>
+        <h2>Especialistas ao <span class="markdrop">Seu Alcance</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper
+          dui justo, sit amet pellentesque diam tincidunt nec. Fusce ac tortor
+          interdum, fringilla ante vel, malesuada enim. Suspendisse nibh neque,
+          porta at mauris sed, lacinia sollicitudin lorem.
+        </p>
+        <div class="botao"><p>Ver mais</p></div>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector(".topbar");
+        if (window.scrollY > 0) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+
+    <footer>
+      <p>Santa Menefreda &copy; <span id="current-year"></span></p>
+    </footer>
+
+    <script>
+      const year = document.querySelector("#current-year");
+      year.innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>
